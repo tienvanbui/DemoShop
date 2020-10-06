@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe Demo| Mua và bán Thời trang</title>
+    <!-- add file bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- add file css  -->
+    <link rel="stylesheet" href="../Project2808/public/css/myStyle.css">
+    <!-- add file icon -->
+    <link rel="stylesheet"
+        href="../Project2808/public/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+</head>
+
+<body>
+    <!-- open header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="containernavbar">
+                    <div class="containernavbar__warp">
+                        <div class="containernavbar__warp_item">
+                            <ul>
+                                <li><a href="#">Kênh Người Bán</a></li>
+                                <li class="download"><a href="#">Tải ứng dụng</a>
+                                    <div class="QRcode">
+                                        <img src="../Project2808/public/img/f184c0b68a2d385feb5d70a76396230b.png" alt=""
+                                            width="185px" height="185px">
+                                        <div class="QRcode__item">
+
+                                            <img src="../Project2808/public/img/2679f513b5f9e235adf2c6c288617e7b.png"
+                                                alt="" width="60px" height="20px">
+                                            <img src="../Project2808/public/img/759416b55e2bd69ecc360ee2faab7ad0.png"
+                                                alt="" width="60px" height="20px">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Kết nối
+                                    <a href="#"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="containernavbar__warp_item">
+                            <ul>
+                                <li><a href="#"><i class="far fa-bell"></i>Thông Báo</a>
+                                    <div class="notice">
+                                        <img src="../Project2808/public/img/login.png" alt="" width="100px"
+                                            height="100px">
+                                        <p>Đăng nhập để xem thông báo</p>
+                                        <div class="access">
+
+                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 " id="btn1">
+                                                <div class="access__item">
+                                                    <a style="padding-right:50px" href="#">Đăng nhập</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="btn2">
+                                                <div class="access__item">
+                                                    <a style="padding-left: 80px" href="#">Đăng ký</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li><a href="#"><i class="far fa-question-circle"></i>Trợ giúp</a></li>
+                                <li>
+                                    <a href="#">Đăng Nhập</a>
+                                </li>
+                                <li><a class="login" href="#">Đăng Ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_nav">
+                    <div class="content_nav_logo">
+                        <h1>ShopDeMo</h1>
+                    </div>
+                    <div class="content_nav_search">
+                        <div class="search_history">
+                            <input class="form-control" type="text"
+                                placeholder="LG-Phiên bản siêu phẩm hấp dẫn giảm giá 25%">
+                            <div class="search__history_item">
+                                <ul>
+                                    <li><a href="#">LG-Phiên bản siêu phẩm hấp dẫn giảm giá 25%</a></li>
+                                    <img src="../Project2808/public/img/logosell.png" alt="" width="120px"
+                                        height="24px">
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button"><i class="fas fa-search"></i></button>
+                        <ul>
+                            <li><a href="#">Điện Thoại</a></li>
+                            <li><a href="#">Tablet</a></li>
+                            <li><a href="#">Phụ Kiện</a></li>
+                            <li><a href="#">Macbook</a></li>
+                            <li><a href="#">Laptop</a></li>
+                            <li><a href="#">Đồng Hồ</a></li>
+                            <li><a href="#">Thiết Bị Thông Minh</a></li>
+                            <li><a href="#">Đồ Cũ</a></li>
+                        </ul>
+                    </div>
+                    <div class="content_nav_cart">
+                        <div class="logo_cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="content-cart">
+                                <div class="open_cart">
+                                    <img src="../Project2808/public/img/icon-chuot-dang-yeu_110447987.jpg" alt=""
+                                        width="80px" height="80px">
+                                    <div class="notice__on_cart">
+
+                                    </div>
+                                </div>
+                                <p>Chưa có sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main>
+        <div class="container-fluid">
+            <div class="content__main">
+                <div class="row">
+
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="listProduct">
+                            <h4><i class="fas fa-list"></i> Danh Mục</h4>
+                            <ul>
+                                <li class="listProduct__item__active"><a href="#">Laptop Dell</a></li>
+                                <li><a href="#">Laptop Asus</a></li>
+                                <li><a href="#">Macbook</a></li>
+                                <li><a href="#">Laptop Lenovo</a></li>
+                                <li><a href="#">Laptop MSI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <div class="content-sort-fillter">
+                            <div class="sort__fillter">
+                                <span>Sắp xếp theo:</span>
+                                <button type="button">Phổ Biến</button>
+                                <button type="button" class="btn__active">Mới Nhất</button>
+                                <button type="button">Bán Chạy</button>
+                                <div class="sort__fillter_price_iteam">
+                                    <span class="price">Giá</span>
+                                    <span class="arrowdrop"><i class="fas fa-angle-down"></i></span>
+                                    <div class="sort__by__price">
+                                        <ul>
+                                            <li><a href="#">Giá tăng dần</a></li>
+                                            <li><a href="#">Giá giảm dần</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="home--fillter--page">
+                                    <span class="pageNumber">
+                                        <span class="pagenow" style="color: #f6422d;">1</span>/5
+                                    </span>
+                                    <button type="button" style="opacity: 0.6;"><i
+                                            class="fas fa-angle-left"></i></button>
+
+                                    <button type="button"><i class="fas fa-angle-right"></i></i></button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="box__content__pro">
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>13%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/201801AM250000001_15168459708835440006443.jpg"
+                                            alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">ASUS ZenBook Flip UX461UA-DS51T Ultra-Slim Convertible</a>
+                                        <p><span>đ15...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">13.250.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 65</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>13%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/2.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop ASUS A512DA-EJ406T R5-3500U I 8GB I 512GB I 15.6"FHD I WIN
+                                            10</a>
+                                        <p><span>đ15...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">13.250.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 45</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>13%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/2.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop ASUS A412DA-EK144T R5-3500U | 8GB| 512GB | 14 FHD | WIN
+                                            10</a>
+                                        <p><span>đ14...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">12.990.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 58</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>13%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/3.png" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop LENOVO LEGION Y540-15IRH 81SY00FAVN I7-9750H 8GB
+                                            1TB+128GB-</a>
+                                        <p><span>đ23...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">22.190.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 2</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>8%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img\/4.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop ASUS UX434FLC-A6173T I7-9750H 8GB
+                                            1TB+128GB-</a>
+                                        <p><span>đ31...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">28.990.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 2</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>8%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/5.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop Asus TUF Gaming FX505DT-AL003T AMD R7-3750H </a>
+                                        <p><span>đ19...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">18.990.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 22</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>18%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/6.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop MSI GF63 Thin 9SC-070VN i7-9750H | 8GB</a>
+                                        <p><span>đ27...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">22.990.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 5</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>8%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/7.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop Acer Predator Helios 300 PH315-51-7533 i7</a>
+                                        <p><span>đ35...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">34.990.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 30</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>13%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/2.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop ASUS A412DA-EK144T R5-3500U | 8GB| 512GB </a>
+                                        <p><span>đ14...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">12.990.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 58</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="product__fillter">
+                                    <div class="product__fillter__item">
+                                        <img src="../Project2808/public/img/1.png" alt="" width="188px" height="188px">
+                                        <div class="like">
+                                            <span><i class="fas fa-check"></i>Mall</span>
+                                        </div>
+                                        <div class="saleof">
+                                            <span>13%</span>
+                                            <span>Giảm</span>
+                                        </div>
+
+                                        <img src="../Project2808/public/img/2.jpg" alt="" height="160px" width="188px">
+                                    </div>
+
+                                    <div class="down__content__product">
+                                        <a href="#">Laptop ASUS A512DA-EJ406T R5-3500U I 8GB I 512GB I 15.6"FHD </a>
+                                        <p><span>đ15...</span> <span class="typemoney">đ</span><span
+                                                class="priceofpro">13.250.000</span><i
+                                                class="fas fa-money-bill-alt"></i>
+                                        </p>
+                                        <span class="heart"><i class="far fa-heart"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></span><span class="by">Đã bán 45</span>
+                                        <p class="addressby">Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pagenation">
+                    <div>
+                        <a href="#">
+                            < </a>
+                    </div>
+                    <div class="active"><a href="#">1</a></div>
+                    <div><a href="#">2</a></div>
+                    <div><a href="#">3</a></div>
+                    <div><a href="#">4</a></div>
+                    <div><a href="#">5</a></div>
+                    <div><a href="#">></a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- open footer -->
+    <footer>
+        <div class="footer__top"></div>
+        <div class="content__footer">
+            <div class="content__footer__box">
+                <div class="content__footer__item">
+                    <h6>CHĂM SÓC KHÁCH HÀNG</h6>
+                    <a href="#">Trung Tâm Trợ Giúp</a>
+                    <a href="#">Shopee Blog</a>
+                    <a href="#">Shopee Mall</a>
+                    <a href="#">Hướng Dẫn Mua Hàng</a>
+                    <a href="#">Hướng Dẫn Bán Hàng</a>
+                    <a href="#">Thanh Toán</a>
+                    <a href="#">Shopee Xu</a>
+                    <a href="#">Vận Chuyển</a>
+                    <a href="#">Trả Hàng & Hoàn Tiền</a>
+                    <a href="#">Chăm Sóc Khách Hàng</a>
+                    <a href="#">Chính Sách Bảo Hành</a>
+                </div>
+                <div class="content__footer__item">
+                    <h6>VỀ SHOPEE</h6>
+                    <a href="#">Giới Thiệu Về Shopee Việt Nam</a>
+                    <a href="#">Tuyển Dụng</a>
+                    <a href="#">Điều Khoản Shopee</a>
+                    <a href="#">Chính Sách Bảo Mật</a>
+                    <a href="#">Chính Hãng</a>
+                    <a href="#">Kênh Người Bán</a>
+                    <a href="#">Flash Sales</a>
+                    <a href="#">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                    <a href="#">Liên Hệ Với Truyền Thông</a>
+                </div>
+                <div class="content__footer__item">
+                    <h6>THANH TOÁN</h6>
+                    <div class="content__footer__item__pay">
+                        <img src="../Project2808/public/img/Visa-Card-With-High-balance.jpg" alt="" width="55px"
+                            height="29px">
+                        <img src="../Project2808/public/img/mastercard.png" alt="" width="55px" height="29px">
+                        <img src="../Project2808/public/img/JCB_logo.svg.png" alt="" width="55px" height="29px">
+                        <img src="../Project2808/public/img/logo-airpay.png" alt="" width="55px" height="29px">
+                    </div>
+                    <h6>ĐƠN VỊ VẬN CHUYỂN</h6>
+                    <div class="content__footer__item__pay">
+                        <img src="../Project2808/public/img/AliExpress-logo-e1484966826447.webp" alt="" width="55px"
+                            height="40px">
+                        <img src="../Project2808/public/img/OIP.jpg" alt="" width="70px" height="40px">
+                        <img src="../Project2808/public/img/ghn-express-logo.png" alt="" width="55px" height="40px">
+                        <img src="../Project2808/public/img/vnpost.jpg" alt="" width="55px" height="40px">
+                    </div>
+                </div>
+                <div class="content__footer__item">
+                    <h6>THEO DÕI CHÚNG TÔI TRÊN</h6>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+                    <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                </div>
+                <div class="content__footer__item">
+                    <h6>TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h6>
+                    <div class="content__download__for__phone">
+                        <img src="../Project2808/public/img/f184c0b68a2d385feb5d70a76396230b.png" alt="" width="86px"
+                            height="86px">
+                        <div class="app">
+                            <div class="app_ios">
+                                <img src="../Project2808/public/img/appsotre.png" alt="" width="87px" height="20px">
+                            </div>
+                            <div class="adr">
+                                <img src="../Project2808/public/img/ggplay.png" alt="" width="87px" height="20px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="national"></div>
+        <div class="content__footer">
+            <div class="content__footer__box">
+                <div class="link">
+                    <div class="noutside">
+                        <span>© 2020 Shopee. Tất cả các quyền được bảo lưu.</span>
+                    </div>
+                    <div class="protected">
+                        <span>Quốc gia & Khu vực:<a href="#">Singapore</a><a href="#">Indonesia</a><a href="#">Đài
+                                Loan</a><a href="#">Thái
+                                Lan</a><a href="#">Malaysia</a><a href="#">Việt Nam</a><a href="#">Philippines
+                            </a><a href="#">Brazil</a></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="content__footer">
+            <div class="content__footer__box">
+                <ul>
+                    <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                    <li><a href="#">QUY CHẾ HOẠT ĐỘNG</a></li>
+                    <li><a href="#">CHÍNH SÁCH VẬN CHUYỂN</a></li>
+                    <li><a href="#">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a></li>
+                </ul>
+            </div>
+            <div class="contact__national">
+                <ul>
+                    <li>
+                        <img src="../Project2808/public/img/logoCCDV.png" alt="" width="120px" height="45px">
+                    </li>
+                    <li>
+                        <img src="../Project2808/public/img/logoCCDV.png" alt="" width="120px" height="45px">
+                    </li>
+                </ul>
+            </div>
+            <p>Công ty TNHH Shopee</p>
+            <p>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội.
+                Tổng đài hỗ trợ:
+                19001221 - Email: cskh@hotro.shopee.vn</p>
+            <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+            <p>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>
